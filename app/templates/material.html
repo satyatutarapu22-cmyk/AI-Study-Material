@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block title %}{{ item.title }} • StudyAI{% endblock %}{% block content %}
+<a class="back" href="{{ url_for('main.index') }}">← Back to library</a><section class="detail-head"><div><span class="tag">{{ item.category }}</span><h1>{{ item.title }}</h1><p>{{ item.filename }}</p></div></section>
+<div class="detail-grid"><section class="content-card"><div class="card-heading"><h2>✦ AI Summary</h2></div><p class="summary">{{ item.summary }}</p></section><section class="content-card"><div class="card-heading"><h2>📝 Revision Questions</h2></div><ol class="questions">{% for question in questions %}<li>{{ question }}</li>{% endfor %}</ol></section></div>
+<section class="content-card original"><div class="card-heading"><h2>Original Extracted Content</h2></div><div class="text-content">{{ item.content }}</div></section>
+{% endblock %}

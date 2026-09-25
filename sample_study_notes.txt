@@ -1,0 +1,3 @@
+Python Basics
+
+Python is a high-level programming language used for data analysis, web development, and automation. Variables store values. Lists store multiple values and can be changed after creation. Functions are reusable blocks of code that perform a specific task. NumPy provides efficient arrays for numerical computing. Pandas provides Series and DataFrames for data analysis.
